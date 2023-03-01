@@ -1,0 +1,118 @@
+body {
+  padding-top: 20px;
+  background-color: rgb(68, 87, 96);
+  ;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+h1 {
+  /* head unit converter */
+  color: #1e0707;
+  font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.converter-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.converter-wrapper input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+
+.converter-wrapper span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+
+}
+
+.converter-wrapper span select {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #1f0503ef;
+  color: #ffffff;
+  font-size: inherit;
+  padding: 10px;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  border-radius: 100px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  border: rgb(56, 2, 2) solid;
+  -webkit-appearance: none !important;
+  /* hide default arrow in chrome  */
+}
+
+.converter-wrapper span::before,
+.converter-wrapper span::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.converter-wrapper span::after {
+  /* Selector arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 2.1em;
+  top: 51%;
+  margin-top: -.5em;
+  color: #ffffff;
+}
+
+.converter-wrapper span::before {
+  /*  box over the arrow */
+  width: 2.1em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: rgb(7, 5, 5);
+  margin: 10px;
+}
+
+.converter-side-a,
+.converter-side-b {
+  float: left;
+  margin-top: 10px;
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.converter-equals {
+  float: left;
+  box-sizing: border-box;
+  width: 10%;
+  color: #080606;
+  font-size: 2.4em;
+  line-height: px;
+  text-align: center;
+}
+
+.converter-side-a {
+
+  padding-right: 10px;
+}
+
+.converter-side-b {
+  padding-left: 10px;
+}
